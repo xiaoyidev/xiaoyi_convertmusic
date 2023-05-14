@@ -17,7 +17,7 @@ $(document).ready(function() {
             iFrameResize({ log: false, minHeight: 400 }, '#widgetv2Api')
             $("#result").show()
         } else {
-            
+            $("#result").hide()
             $(".xiaoyi-container").addClass("faded-xiaoyi")
             $(".modal-xiaoyi").show();
         }
