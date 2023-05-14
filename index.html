@@ -13,33 +13,45 @@
 <style>
 </style>
 </head>
+
 <body class="font-sans antialiased overflow-x-hidden">
-<div class="min-h-screen" style="border: none;">
-    <main>
-        <div class="card bg-base-100 shadow-xl my-5">
-            <div class="card-body" style="height: 100%;">
-                <h2 class="title-logo text-center logo"><span>XiaoYi</span> Converter</h2>
-                <div class="px-2 py-1 text-gray-900 border-2 border-input rounded-md break-words input-width dpl-flex">
-                    <img src="/image/img-link.png" width="40" alt="" srcset="">
-                    <input type="text" id="txt-input" placeholder="Paste link and click GET" required></input>
-                    <div class="badge text-white rounded-md border-0 px-4 py-4 bg-primary"><button id="btn-get">GET</button></div>
-                </div>
-                <div class="input-width text-example">
-                    <div><span class="ex-title">VIDEO_URL</span></div>
-                    <p>any YouTube, TikTok, SoundCloud, Facebook, Twitter, Instagram, Vimeo, Dailymotion, VK, or AOL Video URL</p>
-                </div>
-                <div id="result">
-                    <p class="text-center">Download here:</p>
-                    <iframe id="widgetv2Api"></iframe>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
-                </div>
-            </div>
+    <div class="modal-xiaoyi">
+        <div class="modal-xiaoyi-box">
+            <h1>Hi, I'm Xiao Yi!</h1>
+            <p>You haven't pasted link. Please patse link to get link download</p>
+            <button id="btn-ok">Yes, I know</button>
         </div>
-    </main>
-</div>
-<footer>
-    <span class="text-center"> Created By <span>XiaoYi</span> | &copy 2023 All rights reserved.</span>
-</footer>
+    </div>
+    <div class="xiaoyi-container">
+        <div class="min-h-screen">
+            <main>
+                <div class="card-xiaoyi bg-base-100 shadow-xl my-5">
+                    <div class="card-body">
+                        <h2 class="title-logo text-center logo"><span>XiaoYi</span> Converter</h2>
+                        <div class="px-2 py-1 text-gray-900 border-2 border-input rounded-md break-words input-width dpl-flex">
+                            <img src="/image/img-link.png" width="40" alt="" srcset="">
+                            <input type="text" id="txt-input" placeholder="Paste link and click GET" required></input>
+                            <button id="btn-get"><div class="badge text-white rounded-md border-0 px-4 py-4 bg-primary">GET</div></button>
+                        </div>
+                        <div class="input-width text-example">
+                            <div><span class="ex-title">VIDEO_URL</span></div>
+                            <p>any YouTube, TikTok, SoundCloud, Facebook, Twitter, Instagram, Vimeo, Dailymotion, VK, or AOL Video URL</p>
+                        </div>
+                        <div id="result">
+                            <p class="text-center">Download here:</p>
+                            <iframe id="widgetv2Api"></iframe>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <span class="text-center"> Created By <span>XiaoYi</span> | &copy 2023 All rights reserved.</span>
+        </footer>
+    </div>
+
+
 <script src="/script.js"></script>
 </body>
 </html>
